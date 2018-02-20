@@ -1,0 +1,140 @@
+@font-face {
+	font-family: OSans;
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+	font-family: OLight;
+	src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+	font-family: OBold;
+	src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+	font-family: InfiniteStroke;
+	src: url(../fonts/Infinite_Stroke.otf);
+}
+body { background-color: #ecf0f1;font-family: OSans; }
+h1,h2,h3,h4,h5,h6,.judul { font-family: OBold; }
+p { font-family: OLight; }
+button {
+	cursor: pointer;
+	transition: 0.65s;
+}
+
+a { color: #d7b115; }
+input[type=text]:focus, input[type=password]:focus {
+	outline: none;
+	transition: 0.46s;
+}
+.bag {
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 3%;
+}
+.wrap { margin: 2.4% 5% 2.7% 5%; }
+.bag-1 { width: 7%; }
+.bag-2 { width: 17%; }
+.bag-3 { width: 27%; }
+.bag-4 { width: 37%; }
+.bag-5 { width: 47%; }
+.bag-6 { width: 57%; }
+.bag-7 { width: 67%; }
+.bag-8 { width: 77%; }
+.bag-9 { width: 87%; }
+.bag-10 { width: 97%; }
+.rata-tengah { text-align: center; }
+
+.atas {
+	position: fixed;
+	top: 0px;left: 0px;right: 0px;
+	line-height: 75px;
+	background-color: #fff;
+	color: #3498db;
+	border-bottom: 1px solid #ccc;
+	z-index: 1;
+}
+.judul {
+	font-size: 23px;
+	margin: 0;
+	text-align: center;
+}
+.playlist {
+	position: absolute;
+	top: 105px;left: 5%;
+	width: 60%;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	margin-bottom: 26px;
+}
+.playlist div {
+	line-height: 40px;
+	padding-top: 13px;
+	padding-bottom: 15px;
+	list-style: none;
+}
+.playlist div button {
+	background: none;
+	font-size: 21px;
+	border: none;
+	color: #3498db;
+}
+.player-web {
+	position: fixed;
+	top: 105px;right: 5%;
+	width: 27%;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 19px 0px 22px 0px;
+}
+.player-web .wrap {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+#playPause {
+	background: none;
+	width: 30px;
+	height: 30px;
+	border: none;
+	color: #3498db;
+	font-size: 24px;
+	margin-top: 13px;
+}
+#judulLagu {
+	margin-right: 10px;
+	line-height: 40px;
+}
+#choose {
+	background-color: #3498db;
+	color: #fff;
+	text-align: center;
+}
+#file {
+	width: 90%;
+	position: absolute;
+	margin-top: -13px;
+	left: 5%;right: 5%;
+	height: 68px;
+	opacity: 0.01;
+	background-color: red;
+}
+@media (max-width: 480px) {
+	.playlist {
+		width: 100%;left: 0%;
+		border: none;
+		margin-bottom: 34%;
+		top: 103px;
+	}
+	.playlist li { font-size: 17px;line-height: 36px; }
+	.player-web {
+		left: 0px !important;
+		right: 0px !important;
+		width: 100%;
+		top: 82%;
+		border: none;
+		border-top: 1px solid #ccc;
+		padding: 3px 0px 5px 0px;
+	}
+	#judulLagu { line-height: 31px; }
+	#playPause { font-size: 21px; }
+}
